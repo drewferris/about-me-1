@@ -57,12 +57,20 @@ console.log(name + ' answered ' + ques_education + ' for ques_education');
 var ques_goal = prompt('My goal is to get a job as a software engineer.')
 ques_goal = ques_goal.toLowerCase();
 if (ques_goal === 'yes' || ques_goal === 'y'){
-  alert('You are correct!');
+  console.log(name + 'answered yes to ques_goal');
+  var ques_goal_two = prompt('For a civic tech company.');
+  ques_goal_two = ques_goal_two.toLowerCase();
+  if (ques_goal_two === 'yes' || ques_goal_two === 'y'){
+    alert('You are correct!')
+  } else if (ques_goal_two === 'n' || ques_goal_two === 'no') {
+    alert('Incorrect');
+  } else {
+    alert('smh')
+  }
+
+} else if (ques_goal === 'no' || ques_goal === 'n'){
+  alert ('Incorrect');
+} else {
+  alert ('You did something weird')
 }
-  else if (ques_goal === 'no' || ques_goal === 'n'){
-    alert ('Incorrect');
-  }
-  else {
-    alert ('You did something weird')
-  }
 console.log(name + ' answered ' + ques_goal + ' for ques_goal');
