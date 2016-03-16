@@ -67,7 +67,6 @@ if (ques_goal === 'yes' || ques_goal === 'y'){
   } else {
     alert('smh')
   }
-
 } else if (ques_goal === 'no' || ques_goal === 'n'){
   alert ('Incorrect');
 } else {
