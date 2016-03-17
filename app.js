@@ -103,6 +103,9 @@
      alert('Please enter a number!');
      console.log(name + ' entered a NaN for ques_topten');
      i++;
+   } else {
+     alert('Something went wrong here.');
+     console.log(name + ' did something weird.');
    }
  };
 
