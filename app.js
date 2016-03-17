@@ -101,5 +101,5 @@
 // };
 
 //alert('You answered ' + correctGuess + ' questions correct out of 8!');
-var userFavoriteGames = prompt('What are your top 5 favorite games?');
-alert('Your top 5 are: ' + userFavoriteGames);
+//var userFavoriteGames = prompt('What are your top 5 favorite games?');
+//alert('Your top 5 are: ' + userFavoriteGames);
