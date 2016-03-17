@@ -86,7 +86,7 @@
 
  var i = 0;
  while(i < 4){
-   var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app. You have four tries!')
+   var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app.')
    ques_topten = parseInt(ques_topten);
    if(ques_topten === 2){
      console.log(name + ' guessed ques_topten correct')
@@ -107,7 +107,7 @@
  };
 
  console.log(name + ' answered the following questions correct out of 8, ' + correctGuess);
- alert('You answered ' + correctGuess + ' questions correct out of 8!');
+ alert('You answered ' + correctGuess + ' questions correct out of a total of 8!');
 
  confirm('Enter your Top 5 Favorite Games');
  var arrayGame = [];
