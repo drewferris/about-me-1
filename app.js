@@ -66,18 +66,18 @@
    var ques_goal_two = prompt('Correct! For a civic tech company?');
    ques_goal_two = ques_goal_two.toLowerCase();
    if (ques_goal_two === 'yes' || ques_goal_two === 'y'){
-     console.log(name + ' correctly guessed ques_goal_two')
+     console.log(name + ' correctly guessed ques_goal_two');
      alert('You are correct!');
      correctGuess++;
    } else if (ques_goal_two === 'n' || ques_goal_two === 'no') {
      alert('Incorrect');
-     console.log(name + ' incorrectly guessed ques_goal_two')
+     console.log(name + ' incorrectly guessed ques_goal_two');
    } else {
      alert('smh');
    }
  } else if (ques_goal === 'no' || ques_goal === 'n'){
    alert ('Incorrect');
-   console.log(name + ' incorrectly guessed ques_goal')
+   console.log(name + ' incorrectly guessed ques_goal');
  } else {
    alert ('You did something weird');
    console.log('Something weird happened for ' + name + ' on ques_goal');
@@ -86,10 +86,10 @@
 
  var i = 0;
  while(i < 4){
-   var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app.')
+   var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app.');
    ques_topten = parseInt(ques_topten);
    if(ques_topten === 2){
-     console.log(name + ' guessed ques_topten correct')
+     console.log(name + ' guessed ques_topten correct');
      alert('Correct!');
      correctGuess++;
      i = 4;
@@ -98,7 +98,7 @@
      i++;
    } else if (ques_topten < 2){
      alert ('Too low!');
-     i++
+     i++;
    } else if (isNaN(ques_topten) === true){
      alert('Please enter a number!');
      console.log(name + ' entered a NaN for ques_topten');

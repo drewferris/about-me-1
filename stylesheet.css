@@ -11,3 +11,6 @@ h1 {
 p, ul, ol {
   color: #272625;
 }
+ul, ol {
+  color: blue;
+}
