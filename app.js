@@ -2,21 +2,25 @@
  alert('Hi, ' + name + ' welcome to Rashid 2.0. Please answer the following 5 questions. Please answer with either y/n or yes/no.');
  var correctGuess = 0;
 
- var ques_location = prompt('I moved to Seattle from Oregon.');
- ques_location = ques_location.toLowerCase();
- if (ques_location === 'yes' || ques_location === 'y'){
-   alert('You are incorrect');
+ function locationSeattle() {
+   var ques_location = prompt('I moved to Seattle from Oregon.');
+   ques_location = ques_location.toLowerCase();
+   if (ques_location === 'yes' || ques_location === 'y'){
+     alert('You are incorrect');
+   }
+    else if (ques_location === 'no' || ques_location === 'n'){
+      alert('Correct!');
+      correctGuess++;
+    }
+    else {
+      alert('You did something weird');
+    }
+   console.log(name + ' answered ' + ques_location + ' for ques_location');
  }
-  else if (ques_location === 'no' || ques_location === 'n'){
-    alert('Correct!');
-    correctGuess++;
-  }
-  else {
-    alert('You did something weird');
-  }
- console.log(name + ' answered ' + ques_location + ' for ques_location');
+ locationSeattle();
 
- var ques_seattle = prompt('I am currently attending a bootcamp to be a professional billards player.');
+ function bootcamp() {
+   var ques_seattle = prompt('I am currently attending a bootcamp to be a professional billards player.');
  ques_seattle = ques_seattle.toLowerCase();
  if (ques_seattle === 'yes' || ques_seattle === 'y'){
    alert('You are incorrect!');
@@ -29,7 +33,10 @@
     alert ('You did something weird');
   }
  console.log(name + ' answered ' + ques_seattle + ' for ques_seattle');
+ }
+ bootcamp();
 
+ function dataInterested() {
  var ques_interest = prompt('I\'m interested in web data and the reach of the inernet.');
  ques_interest = ques_interest.toLowerCase();
  if (ques_interest === 'yes' || ques_interest === 'y'){
@@ -43,7 +50,10 @@
     alert ('You did something weird');
   }
  console.log(name + ' answered ' + ques_interest + ' for ques_interest.');
+ }
+ dataInterested();
 
+ function studiedBusiness() {
  var ques_education = prompt('I studied Business Management.');
  ques_education = ques_education.toLowerCase();
  if (ques_education === 'yes' || ques_education === 'y'){
@@ -57,7 +67,10 @@
     alert ('You did something weird');
   }
  console.log(name + ' answered ' + ques_education + ' for ques_education');
+ }
+ studiedBusiness();
 
+ function goalSoftware() {
  var ques_goal = prompt('My goal is to get a job as a software engineer.');
  ques_goal = ques_goal.toLowerCase();
  if (ques_goal === 'yes' || ques_goal === 'y'){
@@ -83,7 +96,10 @@
    console.log('Something weird happened for ' + name + ' on ques_goal');
  }
  console.log(name + ' answered ' + ques_goal + ' for ques_goal');
+ }
+ goalSoftware();
 
+ function topTenList() {
  var i = 0;
  while(i < 4){
    var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app.');
@@ -110,8 +126,15 @@
  };
 
  console.log(name + ' answered the following questions correct out of 8, ' + correctGuess);
- alert('You answered ' + correctGuess + ' questions correct out of a total of 8!');
+ }
+ topTenList();
 
+ function correctTotal() {
+ alert('You answered ' + correctGuess + ' questions correct out of a total of 8!');
+}
+correctTotal();
+
+ function topFiveGame() {
  confirm('Enter your Top 5 Favorite Games');
  var arrayGame = [];
  var game5 = prompt('Number 5?');
@@ -130,3 +153,5 @@
  arrayGame.push(game1);
  console.log(name + ' entered the following for favorite game, ' + game1);
  console.log(name + '\'s top 5 games are: ' + arrayGame);
+ }
+ topFiveGame();
