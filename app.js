@@ -2,10 +2,12 @@
  alert('Hi, ' + name + ' welcome to Rashid 2.0. Please answer the following 5 questions. Please answer with either y/n or yes/no.');
  var correctGuess = 0;
 
+ var arrayLocation = [];
  function locationSeattle() {
    var pTageOne = document.getElementById('ans-one');
    var ques_location = prompt('I moved to Seattle from Oregon.');
    ques_location = ques_location.toLowerCase();
+   arrayLocation.push(ques_location);
    if (ques_location === 'yes' || ques_location === 'y'){
      pTageOne.textContent = 'You are incorrect';
    }
@@ -24,6 +26,7 @@
    var pTagTwo = document.getElementById('ans-two');
    var ques_seattle = prompt('I am currently attending a bootcamp to be a professional billards player.');
    ques_seattle = ques_seattle.toLowerCase();
+   arrayLocation.push(ques_seattle);
    if (ques_seattle === 'yes' || ques_seattle === 'y'){
      pTagTwo.textContent = 'You are incorrect!';
    }
@@ -42,6 +45,7 @@ console.log(name + ' answered ' + ques_seattle + ' for ques_seattle');
    var pTageThree = document.getElementById('ans-three');
    var ques_interest = prompt('I\'m interested in web data and the reach of the inernet.');
    ques_interest = ques_interest.toLowerCase();
+   arrayLocation.push(ques_interest);
    if (ques_interest === 'yes' || ques_interest === 'y'){
      pTageThree.textContent = 'You are correct!';
      correctGuess++;
@@ -60,6 +64,7 @@ console.log(name + ' answered ' + ques_interest + ' for ques_interest.');
    var pTagFour = document.getElementById('ans-four');
    var ques_education = prompt('I studied Business Management.');
    ques_education = ques_education.toLowerCase();
+   arrayLocation.push(ques_education);
    if (ques_education === 'yes' || ques_education === 'y'){
      pTagFour.textContent = 'You are correct!';
      correctGuess++;
@@ -78,6 +83,7 @@ console.log(name + ' answered ' + ques_interest + ' for ques_interest.');
    var pTagFive = document.getElementById('ans-five');
    var ques_goal = prompt('My goal is to get a job as a software engineer.');
    ques_goal = ques_goal.toLowerCase();
+   arrayLocation.push(ques_goal);
    if (ques_goal === 'yes' || ques_goal === 'y'){
      console.log(name + ' answered yes to ques_goal');
      correctGuess++;
@@ -109,6 +115,7 @@ console.log(name + ' answered ' + ques_interest + ' for ques_interest.');
    var i = 0;
    while(i < 4){
      var ques_topten = prompt('With regard to the top-ten list, guess the number corresponding to my favorite app.');
+     arrayLocation.push(ques_topten);
      ques_topten = parseInt(ques_topten);
      if(ques_topten === 2){
        console.log(name + ' guessed ques_topten correct');
@@ -146,17 +153,22 @@ correctTotal();
  var arrayGame = [];
  var game5 = prompt('Number 5?');
  console.log(name + ' entered the following for 5th game, ' + game5);
+ arrayLocation.push(game5);
  arrayGame.push(game5);
  var game4 = prompt('Number 4?');
  console.log(name + ' entered the following for 4th game, ' + game4);
+ arrayLocation.push(game4);
  arrayGame.push(game4);
  var game3 = prompt('Number 3?');
  console.log(name + ' entered the following for 3rd game, ' + game3);
+ arrayLocation.push(game3);
  arrayGame.push(game3);
  var game2 = prompt('Number 2?');
  console.log(name + ' entered the following for 2nd game, ' + game2);
+ arrayLocation.push(game2);
  arrayGame.push(game2);
  var game1 = prompt('Favorite game?');
+ arrayLocation.push(game1);
  arrayGame.push(game1);
  pTagSeven.textContent = 'You entered '+ game1 + ' as your favorite game.';
  console.log(name + '\'s top 5 games are: ' + arrayGame);
